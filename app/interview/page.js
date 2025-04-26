@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FaCircleNotch } from "react-icons/fa";
 
@@ -6,7 +5,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen p-8 pb-20 pt-20 gap-16 mt-30 bg-[#b3eff2] border-solid border-2 border-[#d33eed]">
       <main className="flex flex-col gap-[32px] items-start min-h-screen">
-        <div className="flex flex-row items-start p-6 mt-42 mr-30">
+        <div className="flex flex-row items-start p-6 mt-125 mr-30">
           <Link
             href="/"
           >
@@ -44,24 +43,102 @@ export default function Home() {
           <FaCircleNotch 
             className="ml-10 mt-2"
           />
-          <p className="text-lg text-gray-900 ml-6">
-            What is your biggest strength?
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            Tell me about yourself?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            I'm a nerdy introvert who loves people and learning about new things.
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            I also love yoga, Legos, and Star Trek.
           </p>
         </div>
         <div className="flex flex-row">
           <FaCircleNotch 
             className="ml-10 mt-2"
           />
-          <p className="text-lg text-gray-900 ml-6">
-            What is your biggest weakness?
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            What are your biggest strengths?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            Creativity, Problem Solving, Improvement Mindset, and Empathy...
           </p>
         </div>
         <div className="flex flex-row">
           <FaCircleNotch 
             className="ml-10 mt-2"
           />
-          <p className="text-lg text-gray-900 ml-6">
-            Tell me about a time you encountered a major issue and had to come up with a solution.
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            What are your biggest weaknesses?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            "Falling in line" with unfounded rules/bureaucracy...
+          </p>
+        </div>
+        <div className="flex flex-row">
+          <FaCircleNotch 
+            className="ml-10 mt-2"
+          />
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            When was a time you had a conflict at work and came up with a solution?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            (Murphy's and dealing with SPF line?)
+          </p>
+        </div>
+        <div className="flex flex-row">
+          <FaCircleNotch 
+            className="ml-10 mt-2"
+          />
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            Where do you see yourself in five years?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            I've found that life pivots pretty fast, so I try to go with the flow. But I hope to keep learning more about how AI and new tech can be used to contribute to society.
+          </p>
+        </div>
+        <div className="flex flex-row">
+          <FaCircleNotch 
+            className="ml-10 mt-2"
+          />
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            When was a time you demonstrated leadership?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            (found opportunity in old inventory costs at murphys?)
+          </p>
+        </div>
+        <div className="flex flex-row">
+          <FaCircleNotch 
+            className="ml-10 mt-2"
+          />
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            When was a time you learned from a mistake?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            (leaving RH bc of Dave?)
+          </p>
+        </div>
+        <div className="flex flex-row">
+          <FaCircleNotch 
+            className="ml-10 mt-2"
+          />
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            How do you measure success?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            A balance of customer, teammate, and stakeholder satisfaction.
+          </p>
+        </div>
+        <div className="flex flex-row">
+          <FaCircleNotch 
+            className="ml-10 mt-2"
+          />
+          <p className="text-lg font-bold text-gray-900 ml-6">
+            What unique qualities would you bring to a team?
+          </p>
+          <p className="text-md text-gray-900 ml-10">
+            Creativity, cultivation of psychological safety, and transparency.
           </p>
         </div>
         <div className="flex gap-[24px] flex-wrap items-center justify-center mx-110 mt-20">
