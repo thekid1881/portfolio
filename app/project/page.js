@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen p-8 pb-20 pt-20 gap-16 mt-30 bg-[#b3eff2] border-solid border-2 border-[#d33eed]">
       <main className="flex flex-col gap-[32px] items-start min-h-screen">
-        <div className="flex flex-row items-start p-6 mt-87 mr-30">
+        <div className="flex flex-row items-start p-6 mt-86 mr-30">
           <Link
             href="/"
           >
@@ -39,44 +39,106 @@ export default function Home() {
         <div className="justify-items-start text-4xl text-[#0b14b8] font-extrabold ml-8">
           Project Manager
         </div>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="justify-items-start">
-            <p className="flex flex-col col-start-1 justify-start text-2xl font-bold text-gray-900 ml-8">
-              Philosophy
-            </p>
-            <div className="flex flex-row ml-6 mt-2">
+        <div className="grid grid-cols-3 gap-4 justify-items-start text-lg">
+          <div className="justify-items-start text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
+            <div>
+              <p className="flex flex-col col-start-1 justify-start text-2xl font-bold text-gray-900 ml-4">
+                Philosophy
+              </p>
+            </div>
+            <div className="flex flex-row ml-2 mt-2">
               <FaCircleNotch 
-                className="flex flex-row text-xl ml-4 mt-2"
+                  className="flex flex-row ml-6 mt-2"
               />
-              <p className="flex flex-row justify-start text-lg text-gray-900 ml-4">
+              <p className="flex flex-row justify-start text-gray-900 ml-6">
                 All projects adhere to the "iron triangle" - the interconnectedness of TIME, RESOURCES, and SCOPE.
               </p>
             </div>
-            <FaCircleNotch 
-              className="flex-col ml-10 mt-2"
-            />
-            <p className="flex-col justify-items-start text-lg text-gray-900 ml-6">
-              Because of these inescapable limitations, stakeholder alignment is critical.
-            </p>
-            <FaCircleNotch 
-              className="flex-col ml-10 mt-2"
-            />
-            <p className="flex-col justify-items-start text-lg text-gray-900 ml-6">
-              Alignment requires clear communication and agreement on strategy, goals, and data measurements.
-            </p>
+            <div className="flex flex-row ml-2 mt-2">
+              <FaCircleNotch 
+                  className="flex flex-row ml-6 mt-2"
+              />
+              <p className="flex flex-row justify-items-start text-gray-900 ml-6">
+                Because of these inescapable limitations, stakeholder alignment is critical.
+              </p>
+            </div>
+            <div className="flex flex-row ml-2 mt-2">
+              <FaCircleNotch 
+                  className="flex flex-row ml-6 mt-2"
+              />
+              <p className="flex flex-row justify-items-start text-gray-900 ml-6">
+                Alignment requires clear communication and agreement on strategy, goals, and data measurements.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col col-start-2 justify-start">
-            <p className="flex flex-row justify-items-start text-2xl font-bold text-gray-900 mb-8 ml-8">
-              Problem Solving Stories
-            </p>
+          <div className="justify-items-start text-lg">
+            <div className="justify-items-start text-lg">
+              <div>
+                <p className="flex flex-col col-start-2 justify-start text-2xl font-bold text-gray-900 ml-8">
+                  Problem Solving Stories
+                </p>
+              </div>
+              <div className="flex flex-row ml-6 mt-2">
+                <FaCircleNotch 
+                  className="flex flex-row text-lg ml-6 mt-2"
+                />
+                <p className="flex flex-row justify-start text-lg text-gray-900 ml-6">
+                  example 1...
+                </p>
+              </div>
+              <div className="flex flex-row ml-6 mt-2">
+                <FaCircleNotch 
+                  className="flex flex-row text-lg ml-6 mt-2"
+                />
+                <p className="flex flex-row justify-items-start text-lg text-gray-900 ml-6">
+                  example 2...
+                </p>
+              </div>
+              <div className="flex flex-row ml-6 mt-2">
+                <FaCircleNotch 
+                  className="flex flex-row text-lg ml-6 mt-2"
+                />
+                <p className="flex flex-row justify-items-start text-lg text-gray-900 ml-6">
+                  example 3...
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col col-start-3 justify-start">
-            <p className="flex flex-row justify-items-start text-2xl font-bold text-gray-900 mb-8 ml-8">
-              Work Examples
-            </p>
-          </div>
+          <div className="justify-items-start text-lg">
+            <div className="justify-items-start text-lg">
+              <div>
+                <p className="flex flex-col col-start-3 justify-start text-2xl font-bold text-gray-900 ml-8">
+                  Work Examples
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row ml-6 mt-2">
+              <FaCircleNotch 
+                className="flex flex-row text-lg ml-6 mt-2"
+              />
+              <p className="flex flex-row justify-start text-lg text-gray-900 ml-6">
+                example 1...
+              </p>
+            </div>
+            <div className="flex flex-row ml-6 mt-2">
+              <FaCircleNotch 
+                className="flex flex-row text-lg ml-6 mt-2"
+              />
+              <p className="flex flex-row justify-items-start text-lg text-gray-900 ml-6">
+                example 2...
+              </p>
+            </div>
+            <div className="flex flex-row ml-6 mt-2">
+              <FaCircleNotch 
+                className="flex flex-row text-lg ml-6 mt-2"
+              />
+              <p className="flex flex-row justify-items-start text-lg text-gray-900 ml-6">
+                example 3...
+              </p>
+            </div>
+          </div>          
         </div>
-        <div className="flex gap-[24px] flex-wrap items-center justify-center mx-110 mt-20">
+        <div className="flex gap-[24px] flex-wrap items-center justify-center mx-115 mt-20">
           <Link
             className="flex items-center gap-2 font-bold hover:underline hover:underline-offset-4 p-2"
             href="/interview"
