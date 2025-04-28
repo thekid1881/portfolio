@@ -36,45 +36,45 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="text-4xl text-[#0b14b8] font-extrabold ml-8">
+        <div className="justify-items-start text-4xl text-[#0b14b8] font-extrabold ml-8">
           Project Manager
         </div>
-        <div className="flex flex-col justify-items-start">
-          <p className="text-2xl font-bold text-gray-900 ml-8">
-            Philosophy
-          </p>
-        </div>
-        <div className="flex flex-row">
-          <FaCircleNotch 
-            className="ml-10 mt-2"
-          />
-          <p className="text-lg text-gray-900 ml-6">
-            All projects adhere to the "iron triangle" - the interconnectedness of TIME, RESOURCES, and SCOPE.
-          </p>
-        </div>
-        <div className="flex flex-row">
-          <FaCircleNotch 
-            className="ml-10 mt-2"
-          />
-          <p className="text-lg text-gray-900 ml-6">
-            Because of these inescapable limitations, stakeholder alignment is critical.
-          </p>
-        </div>
-        <div className="flex flex-row">
-          <FaCircleNotch 
-            className="ml-10 mt-2"
-          />
-          <p className="text-lg text-gray-900 ml-6">
-            Alignment requires clear communication and agreement on strategy, goals, and data measurements.
-          </p>
-        </div>
-        <div>
-          <p className="text-2xl font-bold text-gray-900 mb-8 ml-8">
-            Problem Solving Stories
-          </p>
-          <p className="text-2xl font-bold text-gray-900 mb-8 ml-8">
-            Work Examples
-          </p>
+        <div className="grid grid-cols-3 gap-4">
+          <div className="justify-items-start">
+            <p className="flex flex-col col-start-1 justify-start text-2xl font-bold text-gray-900 ml-8">
+              Philosophy
+            </p>
+            <div className="flex flex-row ml-6 mt-2">
+              <FaCircleNotch 
+                className="flex flex-row text-xl ml-4 mt-2"
+              />
+              <p className="flex flex-row justify-start text-lg text-gray-900 ml-4">
+                All projects adhere to the "iron triangle" - the interconnectedness of TIME, RESOURCES, and SCOPE.
+              </p>
+            </div>
+            <FaCircleNotch 
+              className="flex-col ml-10 mt-2"
+            />
+            <p className="flex-col justify-items-start text-lg text-gray-900 ml-6">
+              Because of these inescapable limitations, stakeholder alignment is critical.
+            </p>
+            <FaCircleNotch 
+              className="flex-col ml-10 mt-2"
+            />
+            <p className="flex-col justify-items-start text-lg text-gray-900 ml-6">
+              Alignment requires clear communication and agreement on strategy, goals, and data measurements.
+            </p>
+          </div>
+          <div className="flex flex-col col-start-2 justify-start">
+            <p className="flex flex-row justify-items-start text-2xl font-bold text-gray-900 mb-8 ml-8">
+              Problem Solving Stories
+            </p>
+          </div>
+          <div className="flex flex-col col-start-3 justify-start">
+            <p className="flex flex-row justify-items-start text-2xl font-bold text-gray-900 mb-8 ml-8">
+              Work Examples
+            </p>
+          </div>
         </div>
         <div className="flex gap-[24px] flex-wrap items-center justify-center mx-110 mt-20">
           <Link
