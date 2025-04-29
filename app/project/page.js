@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { FaCircleNotch } from "react-icons/fa";
+import { FlipCard } from "@/components/FlipCard";
 
 export default function Project() {
   return (
     <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen p-8 pb-20 pt-20 gap-16 mt-30 bg-[#b3eff2] border-solid border-2 border-[#d33eed]">
       <main className="flex flex-col gap-[32px] items-start min-h-screen">
-        <div className="flex flex-row items-start p-6 mt-105 mr-30">
+        <div className="flex flex-row items-start p-6 mt-135 mr-30">
           <Link
             href="/"
           >
@@ -15,7 +16,7 @@ export default function Project() {
               Sarah Bill
             </h1>
           </Link>
-          <div className="grid grid-cols-3 gap-2 align-center justify-center text-center ml-120 mt-10">
+          <div className="grid grid-cols-3 gap-2 align-center justify-center text-center ml-120 mt-5">
             <Link 
               className="text-xl font-extrabold text-white bg-[#0b14b8] rounded-md border-solid border-1 border-[#0b14b8] px-4"
               href="/project"
@@ -46,29 +47,23 @@ export default function Project() {
                 Philosophy
               </p>
             </div>
-            <div className="flex flex-row ml-2 mt-2">
-              <FaCircleNotch 
-                  className="flex flex-row ml-2 mt-2"
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
+              <FlipCard
+                frontContent={<h2>Nature of Projects</h2>}
+                backContent={<p>All projects adhere to the "iron triangle" - the interconnectedness of TIME, RESOURCES, and SCOPE.</p>}
               />
-              <p className="flex flex-row justify-start text-gray-900 ml-6">
-                All projects adhere to the "iron triangle" - the interconnectedness of TIME, RESOURCES, and SCOPE.
-              </p>
             </div>
-            <div className="flex flex-row ml-2 mt-2">
-              <FaCircleNotch 
-                  className="flex flex-row ml-2 mt-2"
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
+              <FlipCard
+                frontContent={<h2>Overcoming Limitations</h2>}
+                backContent={<p>Because of these inescapable limitations, stakeholder alignment is critical.</p>}
               />
-              <p className="flex flex-row justify-items-start text-gray-900 ml-6">
-                Because of these inescapable limitations, stakeholder alignment is critical.
-              </p>
             </div>
-            <div className="flex flex-row ml-2 mt-2">
-              <FaCircleNotch 
-                  className="flex flex-row ml-2 mt-2"
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
+              <FlipCard
+                frontContent={<h2>Achieving Alignment</h2>}
+                backContent={<p>Alignment requires clear communication and agreement on strategy, goals, and data measurements.</p>}
               />
-              <p className="flex flex-row justify-items-start text-gray-900 ml-6">
-                Alignment requires clear communication and agreement on strategy, goals, and data measurements.
-              </p>
             </div>
           </div>
           <div className="justify-items-start text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
