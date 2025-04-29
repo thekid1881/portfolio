@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[6px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 pt-20 gap-16 mt-50 bg-[#a3f5f7] border-solid border-2 border-[#d33eed]">
       <main className="flex flex-col gap-[32px] items-center min-h-screen">
-      <div className="flex flex-row items-start p-6 mt-43 mr-30">
+      <div className="flex flex-row items-start p-6 mt-65 mr-30">
           <Link
             href="/"
           >
@@ -36,27 +36,31 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="flex gap-4 items-center flex-row">
+        <div className="grid grid-rows-3 gap-4 items-center mt-15">
             <a 
-                className="mx-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
-                href="/resumemaster.pdf"
+                className="row-start-1 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
+                href="/resumepm.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Master Resume
+                Project Manager Resume
             </a>
-          <Link
-            className="mx-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
-            href="computer"
-          >
-            Project Manager Resume
-          </Link>
-          <Link
-            className="mx-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
-            href="data"
-          >
-            Data Analyst Resume
-          </Link>
+            <a 
+                className="row-start-2 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
+                href="/resumeda.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Data & Business Analyst
+            </a>
+            <a 
+                className="row-start-3 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
+                href="/resumesase.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Software Admin & Engineer
+            </a>
         </div>
         <div className="flex gap-[24px] flex-wrap items-center justify-center mt-20">
           <Link
@@ -66,7 +70,7 @@ export default function Home() {
             Interview Questions
           </Link>
           <Link
-            className="flex items-center gap-2 font-bold hover:underline hover:underline-offset-4 p-2"
+            className="flex items-center gap-2 font-bold hover:underline hover:underline-offset-4 p-2 border-transparent rounded-md bg-gray-300"
             href="/resumes"
           >
             Resumes

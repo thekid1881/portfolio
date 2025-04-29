@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaCircleNotch } from "react-icons/fa";
 
-export default function Home() {
+export default function Project() {
   return (
     <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen p-8 pb-20 pt-20 gap-16 mt-30 bg-[#b3eff2] border-solid border-2 border-[#d33eed]">
       <main className="flex flex-col gap-[32px] items-start min-h-screen">
