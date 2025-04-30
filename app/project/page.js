@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaCircleNotch } from "react-icons/fa";
+import Image from "next/image";
 import { FlipCard } from "@/components/FlipCard";
 
 export default function Project() {
@@ -72,29 +73,23 @@ export default function Project() {
                 Problem Solving
               </p>
             </div>
-            <div className="flex flex-row ml-2 mt-2">
-              <FaCircleNotch 
-                  className="flex flex-row ml-2 mt-2"
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
+              <FlipCard
+                frontContent={<h2>Stakeholder Conflict</h2>}
+                backContent={<p>Align individual goals to common business strategies, then use data to create clear project expectations.</p>}
               />
-              <p className="flex flex-row justify-start text-gray-900 ml-6">
-                  Stakeholder Conflict: Align individual goals to common business strategies, then use data to clear a path for project expectations.
-              </p>
             </div>
-            <div className="flex flex-row ml-2 mt-2">
-              <FaCircleNotch 
-                  className="flex flex-row ml-2 mt-2"
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
+              <FlipCard
+                frontContent={<h2>Scope Creep</h2>}
+                backContent={<p>In traditional projects, the BRD can be used with change management. With agile projects, sprint metrics can be discussed to carefully commit to work.</p>}
               />
-              <p className="flex flex-row justify-items-start text-gray-900 ml-6">
-                Scope Creep: Changing requirements is inevitable. In traditional projects, the BRD can be used with change management techniques. With agile initiatives, sprint metrics can be discussed to carefully commit to work.
-              </p>
             </div>
-            <div className="flex flex-row ml-2 mt-2">
-              <FaCircleNotch 
-                  className="flex flex-row ml-2 mt-2"
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
+              <FlipCard
+                frontContent={<h2>Dependency Delays</h2>}
+                backContent={<p>Resolving impediments is a top priority, achieved through honest and direct transparency between the project team and the stakeholders.</p>}
               />
-              <p className="flex flex-row justify-items-start text-gray-900 ml-6">
-                Dependency Delays: Resolving impediments is a top priority; achieved through honest and direct transparency on both sides -- the project team, as well as the stakeholders.
-              </p>
             </div>
           </div>
           <div className="justify-items-start text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
@@ -104,12 +99,21 @@ export default function Project() {
               </p>
             </div>
             <div className="flex flex-row justify-self-center ml-2 mt-2">
-              <Link
-                className="mx-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6 mb-4"
-                href="/gantt"
-              >
-                Gantt Chart
-              </Link>
+              <FlipCard
+                frontContent={<h2>Program Schedule</h2>}
+                backContent={
+                  <Link
+                    href="/gantt"
+                  >
+                    <Image
+                      src="/programschedule.png"
+                      width={250}
+                      height={250}
+                      alt="program schedule"
+                    />
+                  </Link>
+                }
+              />
             </div>
             <div className="flex flex-row justify-self-center ml-2 mt-2">
               <Link
