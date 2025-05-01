@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { FaCircleNotch } from "react-icons/fa";
+import { FlipCard } from "@/components/FlipCard";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen p-8 pb-20 pt-20 gap-16 mt-30 bg-[#b3eff2] border-solid border-2 border-[#d33eed]">
       <main className="flex flex-col gap-[32px] items-start min-h-screen">
-        <div className="flex flex-row items-start p-6 mt-106 mr-30">
+        <div className="flex flex-row items-start p-6 mt-70 mr-30">
           <Link
             href="/"
           >
@@ -39,110 +40,54 @@ export default function Home() {
         <div className="text-4xl text-[#0b14b8] font-extrabold ml-8">
           Interview Questions
         </div>
-        <div className="grid grid-rows-16">
-          <div className="flex flex-row row-start-1">
-            <FaCircleNotch 
-              className="ml-10 mt-2"
+        <div className="grid grid-cols-4 gap-4">
+          <div className="grid-cols-subgrid col-start-1">
+            <FlipCard
+              frontContent={<h2>Tell me about yourself?</h2>}
+              backContent={<p>I'm a nerdy introvert who loves people and learning about new things. I also love yoga, Legos, and Star Trek.</p>}
             />
-            <p className="text-lg font-bold text-gray-900 ml-6">
-              Tell me about yourself.
-            </p>
           </div>
-          <div className="flex flex-row row-start-2 ml-10">
-            <p className="text-md text-gray-900 ml-10">
-            I'm a nerdy introvert who loves people and learning about new things. I also love yoga, Legos, and Star Trek.
-            </p>
-          </div>
-          <div className="flex flex-row row-start-3">
-            <FaCircleNotch 
-              className="ml-10 mt-2"
+          <div className="grid-cols-subgrid col-start-2">
+            <FlipCard
+              frontContent={<h2>What are your strengths?</h2>}
+              backContent={<p>Creativity, Problem Solving, Improvement Mindset, and E.Q. (Emotional Intelligence).</p>}
             />
-            <p className="text-lg font-bold text-gray-900 ml-6">
-              What are your biggest strengths?
-            </p>
           </div>
-          <div className="flex flex-row row-start-4 ml-10">
-            <p className="text-md text-gray-900 ml-10">
-              Creativity, Problem Solving, Improvement Mindset, and E.Q. (Emotional Intelligence).
-            </p>
-          </div>
-          <div className="flex flex-row row-start-5">
-            <FaCircleNotch 
-              className="ml-10 mt-2"
+          <div className="grid-cols-subgrid col-start-3">
+            <FlipCard
+              frontContent={<h2>What are your weaknesses?</h2>}
+              backContent={<p>Ignoring processes or tools which are holding back business strategy or innovation.</p>}
             />
-            <p className="text-lg font-bold text-gray-900 ml-6">
-              What are your biggest weaknesses?
-            </p>
           </div>
-          <div className="flex flex-row row-start-6 ml-10">
-            <p className="text-md text-gray-900 ml-10">
-              Ignoring processes or tools which are holding back business strategy or innovation.
-            </p>
-          </div>
-          <div className="flex flex-row row-start-7">
-            <FaCircleNotch 
-              className="ml-10 mt-2"
+          <div className="grid-cols-subgrid col-start-4">
+            <FlipCard
+              frontContent={<h2>How do you resolve conflict?</h2>}
+              backContent={<p>Using elicitation techniques to make goals and expectations transparent, then finding common ground using data and business strategy.</p>}
             />
-            <p className="text-lg font-bold text-gray-900 ml-6">
-              How do you deal with resolving conflict at work?
-            </p>
           </div>
-          <div className="flex flex-row row-start-8 ml-10">
-            <p className="text-md text-gray-900 ml-10">
-              Using elicitation techniques to make goals and expectations transparent, then finding common ground using data and business strategy.
-            </p>
-          </div>
-          <div className="flex flex-row row-start-9">
-            <FaCircleNotch 
-              className="ml-10 mt-2"
+          <div className="grid-cols-subgrid col-start-1">
+            <FlipCard
+              frontContent={<h2>Where do you see yourself in five years?</h2>}
+              backContent={<p>Life pivots pretty fast, so I try to go with the flow. But I hope to continue learning how AI and new tech can be used to contribute to society.</p>}
             />
-            <p className="text-lg font-bold text-gray-900 ml-6">
-              Where do you see yourself in five years?
-            </p>
           </div>
-          <div className="flex flex-row row-start-10 ml-10">
-            <p className="text-md text-gray-900 ml-10">
-              Life pivots pretty fast, so I try to go with the flow. But I hope to continue learning how AI and new tech can be used to contribute to society.
-            </p>
-          </div>
-          <div className="flex flex-row row-start-11">
-            <FaCircleNotch 
-              className="ml-10 mt-2"
+          <div className="grid-cols-subgrid col-start-2">
+            <FlipCard
+              frontContent={<h2>What do you think leadership is?</h2>}
+              backContent={<p>Helping people achieve excellent outcomes by finding and leveraging their unique skill sets.</p>}
             />
-            <p className="text-lg font-bold text-gray-900 ml-6">
-              What do you think leadership is?
-            </p>
           </div>
-          <div className="flex flex-row row-start-12 ml-10">
-            <p className="text-md text-gray-900 ml-10">
-              Helping people achieve excellent outcomes, leveraging their unique skill sets.
-            </p>
-          </div>
-          <div className="flex flex-row row-start-13">
-            <FaCircleNotch 
-              className="ml-10 mt-2"
+          <div className="grid-cols-subgrid col-start-3">
+            <FlipCard
+              frontContent={<h2>How do you measure success?</h2>}
+              backContent={<p>A balance of customer, teammate, and stakeholder satisfaction; measured through communication and data.</p>}
             />
-            <p className="text-lg font-bold text-gray-900 ml-6">
-              How do you measure success?
-            </p>
           </div>
-          <div className="flex flex-row row-start-14 ml-10">
-            <p className="text-md text-gray-900 ml-10">
-              A balance of customer, teammate, and stakeholder satisfaction; measured through communication and data.
-            </p>
-          </div>
-          <div className="flex flex-row row-start-15">
-            <FaCircleNotch 
-              className="ml-10 mt-2"
+          <div className="grid-cols-subgrid col-start-4">
+            <FlipCard
+              frontContent={<h2>What unique qualities do you bring to a team?</h2>}
+              backContent={<p>Creativity, Psychological Safety, and Transparent Leadership.</p>}
             />
-            <p className="text-lg font-bold text-gray-900 ml-6">
-              What unique qualities would you bring to a team?
-            </p>
-          </div>
-          <div className="flex flex-row row-start-16 ml-10">
-            <p className="text-md text-gray-900 ml-10">
-              Creativity, Psychological Safety, and Transparent Leadership.
-            </p>
           </div>
         </div>
         <div className="flex gap-[24px] flex-wrap items-center justify-center mx-110 mt-20">

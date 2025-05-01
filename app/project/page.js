@@ -6,7 +6,7 @@ import { FlipCard } from "@/components/FlipCard";
 export default function Project() {
   return (
     <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen p-8 pb-20 pt-20 gap-16 mt-30 bg-[#b3eff2] border-solid border-2 border-[#d33eed]">
-      <main className="flex flex-col gap-[32px] items-start min-h-screen">
+      <main className="flex flex-col gap-[32px] justify-center min-h-screen">
         <div className="flex flex-row items-start p-6 mt-135 mr-30">
           <Link
             href="/"
@@ -41,8 +41,8 @@ export default function Project() {
         <div className="justify-items-start text-4xl text-[#0b14b8] font-extrabold ml-8">
           Project Manager
         </div>
-        <div className="grid grid-cols-3 gap-4 justify-items-start text-lg">
-          <div className="justify-items-start text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
+        <div className="grid grid-cols-3 gap-6 justify-center text-lg">
+          <div className="justify-items-center text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
             <div>
               <p className="flex flex-col col-start-1 justify-start text-2xl font-bold text-gray-900 ml-4">
                 Philosophy
@@ -67,7 +67,7 @@ export default function Project() {
               />
             </div>
           </div>
-          <div className="justify-items-start text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
+          <div className="justify-items-center text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
             <div>
               <p className="flex flex-col col-start-2 justify-start text-2xl font-bold text-gray-900 ml-4">
                 Problem Solving
@@ -92,15 +92,15 @@ export default function Project() {
               />
             </div>
           </div>
-          <div className="justify-items-start text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
+          <div className="justify-items-center text-lg border-solid border-2 border-gray-500 rounded-md p-4 ml-6">
             <div>
-              <p className="flex flex-col col-start-3 justify-start text-2xl font-bold text-gray-900 ml-4 mb-20">
+              <p className="flex flex-col col-start-3 justify-start text-2xl font-bold text-gray-900 ml-4">
                 Work Examples
               </p>
             </div>
-            <div className="flex flex-row justify-self-center ml-2 mt-2">
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
               <FlipCard
-                frontContent={<h2>Program Schedule</h2>}
+                frontContent={<h2>Project Schedule</h2>}
                 backContent={
                   <Link
                     href="/gantt"
@@ -115,21 +115,39 @@ export default function Project() {
                 }
               />
             </div>
-            <div className="flex flex-row justify-self-center ml-2 mt-2">
-              <Link
-                className="mx-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6 mb-4"
-                href="/stakeholder"
-              >
-                Stakeholder Communication
-              </Link>
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
+              <FlipCard
+                frontContent={<h2>Process Map</h2>}
+                backContent={
+                  <Link
+                    href="/map"
+                  >
+                    <Image
+                      src="/processmap.png"
+                      width={250}
+                      height={250}
+                      alt="process map"
+                    />
+                  </Link>
+                }
+              />
             </div>
-            <div className="flex flex-row justify-self-center ml-2 mt-2">
-              <Link
-                className="mx-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6 mb-4"
-                href="/retro"
-              >
-                Retrospective
-              </Link>
+            <div className="ml-2 my-2 p-2 justify-items-center text-center">
+              <FlipCard
+                frontContent={<h2>Scrum Retrospective</h2>}
+                backContent={
+                  <Link
+                    href="/retro"
+                  >
+                    <Image
+                      src="/retrospective.png"
+                      width={250}
+                      height={250}
+                      alt="retrospective"
+                    />
+                  </Link>
+                }
+              />
             </div>
           </div>          
         </div>

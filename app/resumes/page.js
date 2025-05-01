@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[6px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 pt-20 gap-16 mt-50 bg-[#a3f5f7] border-solid border-2 border-[#d33eed]">
       <main className="flex flex-col gap-[32px] items-center min-h-screen">
-      <div className="flex flex-row items-start p-6 mt-65 mr-30">
+      <div className="flex flex-row items-start p-6 mt-45 mr-30">
           <Link
             href="/"
           >
@@ -36,9 +36,9 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="grid grid-rows-3 gap-4 items-center mt-15">
+        <div className="grid grid-cols-3 gap-4 items-center mt-15">
             <a 
-                className="row-start-1 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
+                className="col-start-1 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
                 href="/resumepm.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export default function Home() {
                 Project Manager Resume
             </a>
             <a 
-                className="row-start-2 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
+                className="col-start-2 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
                 href="/resumeda.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,7 +54,7 @@ export default function Home() {
                 Data & Business Analyst
             </a>
             <a 
-                className="row-start-3 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
+                className="col-start-3 mx-4 my-4 rounded-md border-2 border-solid border-[#0b14b8] transition-colors flex items-center justify-center bg-[#50c0fa] text-gray-800 gap-2 hover:bg-[#d1a9fc] hover:text-gray-800 font-bold text-lg h-10 p-6"
                 href="/resumesase.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
